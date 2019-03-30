@@ -3,8 +3,8 @@
   <script type="text/javascript">
         window.onload = function onLoad() {
             param = GetQueryString();
-            document.getElementById("cardImage").content==param["url"];
-            document.getElementById("bodyImage").scr=param["url"];
+            document.getElementById("cardImage").content="http://drive.google.com/uc?export=view&id="+param["imageID"];
+            document.getElementById("bodyImage").scr="http://drive.google.com/uc?export=view&id="+param["imageID"];
         }
 
         function GetQueryString() {
@@ -37,6 +37,6 @@
   
   </head>
   <body>
-  <img id="bodyImage" scr="">
+  <img id="bodyImage" scr="https://secure-dcdn.cdn.nimg.jp/nicoaccount/usericon/5645/56455531.jpg?1459616407">
   </body>
 </html>
