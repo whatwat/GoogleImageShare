@@ -1,12 +1,13 @@
 <html>
   <head>
   <script type="text/javascript">
-        window.onload = function onLoad() {
-            param = GetQueryString();
-            document.getElementById("cardImage").content="http://drive.google.com/uc?export=view&id="+param["imageID"];
+  
+  			window.addEventListener('DOMContentLoaded', function(e) {
+        	param = GetQueryString();
+          document.getElementById("cardImage").content="http://drive.google.com/uc?export=view&id="+param["imageID"];
         	document.getElementById("bodyImage").src="http://drive.google.com/uc?export=view&id="+param["imageID"];
-        }
-
+				})
+				
         function GetQueryString() {
             if (1 < document.location.search.length) {
                 // Å‰‚Ì1•¶Žš (?‹L†) ‚ðœ‚¢‚½•¶Žš—ñ‚ðŽæ“¾‚·‚é
