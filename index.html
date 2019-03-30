@@ -4,7 +4,7 @@
         window.onload = function onLoad() {
             param = GetQueryString();
             document.getElementById("cardImage").content="http://drive.google.com/uc?export=view&id="+param["imageID"];
-        	document.getElementById("bodyImage").content="http://drive.google.com/uc?export=view&id="+param["imageID"];
+        	document.getElementById("bodyImage").src="http://drive.google.com/uc?export=view&id="+param["imageID"];
         }
 
         function GetQueryString() {
